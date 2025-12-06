@@ -6,306 +6,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Korina Morfin</title>
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: black; color: white; margin: 0; padding: 0;">
+<body>
     <!--Etiq cabecera-->
     <header>
         <!--Barra de navegacion-->
-        <nav
-            style="text-align: center; padding: 15px; background-color: black; color: white; font-family: 'Poppins', sans-serif;">
-            <ul style="list-style-type: none; padding: 0; margin: 0; font-size: 20px; margin-left: 30px;">
-                <li style="display: inline; margin-right: 50px"><a href="#Services">Services</a></li>
-                <li style="display: inline; margin-right: 50px"><a href="#Products">Products</a></li>
-                <li style="display: inline; margin-right: 50px"><a href="#Blog">Blog</a></li>
-                <li style="display: inline; margin-right: 50px"><a href="#Collabs">Collabs</a></li>
+        <nav class="navegation">
+            <ul>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="#Collabs">Collabs</a></li>
             </ul>
         </nav>
     </header>
+
+<!--Introduction section-->
     <section>
-        <img src="img/Banner.jpg" alt="Banner Personal" style="width: 100%; height: auto;">
-        <h1
-            style="text-align: center; letter-spacing: 3px; font-family: 'Merriweather', sans-serif; margin-bottom: 5px; margin-top: 80px">
-            Korina Morfin
-        </h1>
-        <h2
-            style="text-align: center; letter-spacing: 2px; font-family: 'Lato', sans-serif; margin-top: 0px; margin-bottom: 40px; font-size: 20px;">
-            Personal Trainer
-        </h2>
-    </section>
-    <main>
-        <!--Introduction section-->
-        <div
-            style="max-width: 1050px; margin: auto; text-align: center; display: block; font-family: 'Lato', sans-serif; font-size: 18px;">
+        <div class="Introduction">
+            <div class="Intro">
+                <h1>Korina Morfin</h1>
+                <h2>Certified Personal Trainer</h2>
             <article>
-                <p style="line-height: 1.4;">I am Korina Morfin, an internationally certified NASM Personal Trainer
+                <p>I am Korina Morfin, an internationally certified NASM Personal Trainer
                     dedicated to helping clients build strength, confidence, knowledge, and -most importantly-
                     real results at any fitness level. My foundation is smart training: workouts that not only
                     make you sweat, but also respect your process, your technique, and your lifestyle.
                 </p>
-                <p style="line-height: 1.4;">I take a science-based, biomechanics-driven approach, designing
-                    personalized programs that teach you how to train intelligently, progress safely, and understand how your
+                <p>I take a science-based, biomechanics-driven approach, designing
+                    personalized programs that teach you how to train intelligently, progress safely, and understand how
+                    your
                     body moves so you can achieve your goals effectively and sustainably. I do not create generic
                     routines-every plan I design has a purpose and a strategy made specifically for you.
                 </p>
-                <p style="line-height: 1.4;">My mission is to guide you step by step so you can discover how strong you
+                <p>My mission is to guide you step by step so you can discover how strong you
                     can truly become, both physically and mentally. I want you to progress, surprise yourself, maintain
                     your results through healthy habits, and most of all, learn to enjoy the process
                 </p>
-                <p style="line-height: 1.4;"><strong> Training with me means having a coach who pushes you, corrects
-                    you, and supports you through every stage-so you can become a more disciplined, confident, and
-                    stronger version of yourself.</strong>
+                <p><strong> Training with me means having a coach who pushes you, corrects
+                        you, and supports you through every stage-so you can become a more disciplined, confident, and
+                        stronger version of yourself.</strong>
                 </p>
             </article>
+            </div>
+
+            <div class="Korina">
+                <img src="img/Korina Morfin.png" alt="Korina Morfin">
+            </div>
         </div>
-        <!--Services section-->
-        <section id="Services">
-            <h3
-                style="text-align:center; margin-top: 100px; font-family: 'Merriweather', sans-serif; letter-spacing: 1.5px; font-size: 30px;">
-                Services </h3>
-            <hr style="border: 0; height: 3px; background-color: #f8de00; width: 80%; margin: auto;">
-            <p style="text-align: center; margin-top: 50px; font-family: 'Montserrat', sans-serif; font-size: 40px;">
-                <strong>PLANS TO FIT YOUR GOALS</strong>
-            </p>
-            <p
-                style="max-width: 1000px; margin: auto; text-align: center; display: block; font-family: 'Lato', sans-serif; line-height: 1.4; font-size: 17px;">
-                Transform your body with structured workouts, personalized nutrition guidance, and a plan designed
-                around your unique goals. Build real strength and muscle through clear and progressive routines that
-                allow you to track your progress and truly feel the results. Stay consistent, get toned, and feel strong
-                with a training program that emphasizes strength development, proper recovery, and a balanced approach
-                to achieving long-term fitness success.
-            </p>
-            <div style="text-align: center; margin-top: 80px;">
-                <img src="img/1M.JPEG" alt="Membership one month" width="300" style="margin-right: 30px;">
-                <img src="img/6M.JPEG" alt="Membership six months" width="300" style="margin-right: 30px;">
-                <img src="img/12M.JPEG" alt="Membership twelve months" width="300">
-            </div>
-            <div align="center" style="margin-top: 80px;">
-                <button type="button" style="border: none; padding: 0; background: none; cursor: pointer;">
-                    <img src="img/Join.JPEG" alt="Join now button" width="400">
-                </button>
-            </div>
-        </section>
-        <!--Products section-->
-        <section id="Products">
-            <h3
-                style="text-align:center; margin-top: 70px; font-family: 'Merriweather', sans-serif; letter-spacing: 1.5px; font-size: 30px;">
-                Products </h3>
-            <hr style="border: 0; height: 3px; background-color: #f8de00; width: 80%; margin: auto;">
-            <p
-                style="max-width: 1000px; margin: auto; text-align: center; display: block; font-family: 'Lato', sans-serif; line-height: 1.4; font-size: 17px; margin-top: 50px">
-                Discover my collection of e-books designed to help you build a healthier and stronger lifestyle from the
-                ground up. Here you'll find practical guides of easy and nutritious recipes for a balanced nutrition,
-                and workout programs created for who want to improve their fitness, gain strength, and transform their habits.
-            </p><br>
-            <p
-                style="max-width: 1000px; margin: auto; text-align: center; display: block; font-family: 'Lato', sans-serif; line-height: 1.4; font-size: 17px;">
-                <strong>Everything is crafted to help you progress at your own pace, with clear, straightforward
-                information you can trust.</strong>
-            </p>
-            <div style="text-align: center; margin-top: 50px;">
-                <img src="img/Healthy recipes.png" alt="Healthy recipes ebook" width="250" style="margin-right: 200px;">
-                <img src="img/Healthy snacks.png" alt="Healthy snacks ebook" width="250">
-            </div>
-            <ul
-                style="text-align: center; list-style-type: none; padding: 0; margin: 0; font-size: 20px; font-family: 'Lato', sans-serif; font-size: 17px; margin-top: 30px;">
-                <li style="display: inline; margin-right:  395px">$25 USD</li>
-                <li style="display: inline;">$25 USD</li>
-            </ul>
-            <div align="center" style="margin-top: 30px;">
-                <button type="button"
-                    style="display: inline-block; padding: 9px 30px; cursor: pointer; margin-right: 380px; background-color: #f8de00; font-size: 13px; border-radius: 12px; border: none;">
-                    Add
-                </button>
-                <button type="button"
-                    style="display: inline-block; padding: 9px 30px; cursor: pointer; background-color: #f8de00; font-size: 13px; border-radius: 12px; border: none;">
-                    Add
-                </button>
-            </div>
-            <div style="text-align: center; margin-top: 60px;">
-                <img src="img/Home training.png" alt="Home training ebook" width="250" style="margin-right: 200px;">
-                <img src="img/Training ebook.png" alt="Training habits ebook" width="250">
-            </div>
-            <ul
-                style="text-align: center; list-style-type: none; padding: 0; margin: 0; font-size: 20px; font-family: 'Lato', sans-serif; font-size: 17px; margin-top: 30px;">
-                <li style="display: inline; margin-right:  395px">$25 USD</li>
-                <li style="display: inline;">$25 USD</li>
-            </ul>
-            <div align="center" style="margin-top: 30px;">
-                <button type="button"
-                    style="display: inline-block; padding: 9px 30px; cursor: pointer; margin-right: 380px; background-color: #f8de00; font-size: 13px; border-radius: 12px; border: none;">
-                    Add
-                </button>
-                <button type="button"
-                    style="display: inline-block; padding: 9px 30px; cursor: pointer; background-color: #f8de00; font-size: 13px; border-radius: 12px; border: none;">
-                    Add
-                </button>
-            </div>
-        </section>
-        <!--Blog section-->
-        <section id="Blog">
-            <h3
-                style="text-align:center; margin-top: 70px; font-family: 'Merriweather', sans-serif; letter-spacing: 1.5px; font-size: 30px;">
-                Blog </h3>
-            <hr style="border: 0; height: 3px; background-color: #f8de00; width: 80%; margin: auto;">
-            <!--Lecture 1-->
-            <table align="center" style="margin-top: 70px; width:1000px;">
-                <tr>
-                    <td>
-                        <img src="img/sleep.jpg" width="250" style="margin-top: 35px" alt="Sleep image">
-                    </td>
-                    <td>
-                        <p style="font-size: 25px; margin-left: 20px; font-family: 'Lato', sans-serif;">
-                            Why should you sleep 7 to 8 hours a day?</p>
-                        <p
-                            style="font-size: 17px; margin-left: 20px; font-family: 'Lato', sans-serif; text-align: justify;">
-                            Research shows that lack of sleep increases the risk of obesity, heart disease and
-                            infections. During the night, heart rate, breathing rate and blood pressure rise and fall, a process
-                            that can be important for cardiovascular health...
-                        </p>
-                        <button
-                            style="background:none; border:none; color:#f8de00; text-decoration:underline; cursor:pointer; padding:0; font-size: 17px; margin-left: 20px; font-family: 'Lato', sans-serif;">
-                            Read more
-                        </button>
-                    </td>
-                </tr>
-            </table>
-            <!--Lecture 2-->
-            <table align="center" style="margin-top: 50px; width:1000px;">
-                <tr>
-                    <td>
-                        <img src="img/healthy food.jpg" width="250" style="margin-top: 35px" alt="Healthy food image">
-                    </td>
-                    <td>
-                        <p style="font-size: 25px; margin-left: 20px; font-family: 'Lato', sans-serif;">
-                            How important is to eat healthy?</p>
-                        <p
-                            style="font-size: 17px; margin-left: 20px; font-family: 'Lato', sans-serif; text-align: justify">
-                            Eating healthy is crucial for health, as it helps prevent chronic diseases such as diabetes,
-                            heart disease and cancer, in addition to protecting against malnutrition. Adequate nutrition
-                            provides the necessary energy for day to day, improves physical and mental well-being,
-                            strengthens teeth and bones, and is one of the main pillars of a long and healthy life...
-                        </p>
-                        <button
-                            style="background:none; border:none; color:#f8de00; text-decoration:underline; cursor:pointer; padding:0; font-size: 17px; margin-left: 20px; font-family: 'Lato', sans-serif;">
-                            Read more
-                        </button>
-                    </td>
-                </tr>
-            </table>
-            <!--Lecture 3-->
-            <table align="center" style="margin-top: 50px; width:1000px;">
-                <tr>
-                    <td>
-                        <img src="img/training.jpg" width="250" style="margin-top: 35px" alt="Training image">
-                    </td>
-                    <td>
-                        <p style="font-size: 25px; margin-left: 20px; font-family: 'Lato', sans-serif;">
-                            Does the technique matter?</p>
-                        <p
-                            style="font-size: 17px; margin-left: 20px; font-family: 'Lato', sans-serif; text-align: justify">
-                            The technique is important in the gym because it prevents injuries, optimizes the results of
-                            the training and allows greater control and efficiency in each exercise. A good technique
-                            ensures that the desired muscles are worked, avoiding excessive tension in joints and bones,
-                            and maximizing muscle growth and performance...
-                        </p>
-                        <button
-                            style="background:none; border:none; color:#f8de00; text-decoration:underline; cursor:pointer; padding:0; font-size: 17px; margin-left: 20px; font-family: 'Lato', sans-serif;">
-                            Read more
-                        </button>
-                    </td>
-                </tr>
-            </table>
-        </section>
-        <!--Collabs section-->
-        <section id="Collabs">
-            <h3
-                style="text-align:center; margin-top: 70px; font-family: 'Merriweather', sans-serif; letter-spacing: 1.5px; font-size: 30px;">
-                Collabs </h3>
-            <hr style="border: 0; height: 3px; background-color: #f8de00; width: 80%; margin: auto;">
-            <div style="font-family: 'Lato', sans-serif;">
-                <p style="margin-top: 50px; margin-bottom: 30px; margin-left: 10%; font-size: 17px;">
-                    Interested in working together? Just fill out some info and
-                    I will be in touch shortly! I cannot wait to hear from you!
-                </p>
-                <form style="margin-bottom: 20px; margin-left: 10%;">
-                    <div>
-                        <label for="Name"> Name<span style="color: red;">*</span></label><br>
-                        <input type="text" id="Name" name="Name" size="38"
-                            style="border-radius: 12px; border: 2px solid gray;">
-                    </div><br>
-                    <div>
-                        <label for="Name"> Email<span style="color: red;">*</span></label><br>
-                        <input type="text" id="Email" name="Email" size="38"
-                            style="border-radius: 12px; border: 2px solid gray;">
-                    </div><br>
-                    <div>
-                        <label for="Phone"> Phone<span style="color: red;">*</span></label><br>
-                        <input type="text" id="Phone" name="Phone" size="38"
-                            style="border-radius: 12px; border: 2px solid gray;">
-                    </div><br>
-                    <div>
-                        <label for="Message"> Message </label><br>
-                        <textarea id="Message" name="Message" rows="6" cols="36"
-                            style="border-radius: 12px; border: 2px solid gray;"></textarea>
-                    </div><br>
-                    <fieldset style="width: 88%; border: solid #f8de00">
-                        <legend> How did you hear of me?</legend>
-                        <label style="margin-right: 18px;"><input type="checkbox" value="Instagram"
-                                style="cursor: pointer;"> Instragram </label>
-                        <label style="margin-right: 18px;"><input type="checkbox" value="Facebook"
-                                style="cursor: pointer;"> Facebook </label>
-                        <label style="margin-right: 18px;"><input type="checkbox" value="TikTok"
-                                style="cursor: pointer;"> TikTok </label>
-                        <label style="margin-right: 18px;"><input type="checkbox" value="YouTube"
-                                style="cursor: pointer;"> YouTube </label>
-                        <label style="margin-right: 18px;"><input type="checkbox" value="Other"
-                                style="cursor: pointer;"> Other </label>
-                    </fieldset>
-                    <p><span style="color: red;">*</span> required fields</p>
-                    <button type="submit"
-                        style="padding: 9px 30px; cursor: pointer; margin-bottom: 50px; background-color: #f8de00; font-size: 13px; border-radius: 12px; border: none;">
-                        Submit
-                    </button>
-                </form>
-            </div>
-        </section>
+    </section>
+
+    <main>
+
     </main>
     <!--Pie de pagina-->
-    <footer
-        style="text-align: center; padding: 10px; background-color: white; color: black; font-family: 'Lato', sans-serif;">
-        <p> Have you any questions? Get in touch! </p>
-        <p><strong>support@korinamorfin.com</strong></p>
-        <p style="font-family: 'Poppins', sans-serif;"><strong> FOLLOW ME ON </strong></p>
-        <ul style="list-style: none; padding: 0; margin-left: 20px;">
-            <li style="display: inline-block; margin-right: 20px">
-                <a href="https://m.facebook.com/profile.php?id=61584379673623" target="_blank">
-                    <img src="img/Facebook.png" alt="Facebook" width="30" height="30">
-                </a>
-            </li>
-            <li style="display: inline-block; margin-right: 20px">
-                <a href="https://www.instagram.com/korinamorfin.fit/" target="_blank">
-                    <img src="img/Instagram.png" alt="Instagram" width="30" height="30">
-                </a>
-            </li>
-            <li style="display: inline-block; margin-right: 20px">
-                <a href="https://www.tiktok.com/@korinamorfin" target="_blank">
-                    <img src="img/Tiktok.png" alt="TikTok" width="30" height="30">
-                </a>
-            </li>
-            <li style="display: inline-block; margin-right: 20px">
-                <a href="https://www.youtube.com/@korinamorfin" target="_blank">
-                    <img src="img/Youtube.png" alt="YouTube" width="30" height="30">
-                </a>
-            </li>
-        </ul>
-        <p> © 2025 Korina Morfin. All rights reserved. </p>
+    <footer>
+
+
+
     </footer>
 </body>
 
