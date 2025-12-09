@@ -1,38 +1,45 @@
 /* CSS Document */
+* {
+    box-sizing: border-box;
+}
+
 header {
     text-align: center;
     padding: 10px;
-    background-color: #162456;
+    background-color: #17223C;
     color: white;
 }
 
+                                                    /* Navigation bar */
 .navegation a {
     color: white;
     text-decoration: none;
     font-size: 25px;
+    font-family: "Poppins", sans-serif;
 }
-
 .navegation ul {
     display: flex;
     justify-content: center;
-    gap: 70px; /* separación entre enlaces */
+    gap: 70px;
+    /* separación entre enlaces */
     padding: 10;
     margin: 10;
     list-style: none;
 }
 
 body {
+    padding: 0;
     margin: 0;
+    background-color: #faf7ef;
 }
 
-/* Main container */
+                                                    /* Main container */
 .Introduction {
     display: flex;
     height: 100vh;
     /* alto de la pantalla completa */
 }
-
-/* Left */
+/* Left Introduction*/
 .Intro {
     width: 50%;
     background-color: #faf7ef;
@@ -40,37 +47,295 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
-
 .Intro h1 {
     font-size: 60px;
+    font-family: "Playfair Display", serif;
     line-height: 1.1;
     margin: 0 0 20px 0;
     text-align: center;
 }
-
 .Intro h2 {
     font-size: 25px;
+    font-family: "Playfair Display", serif;
     line-height: 1.1;
     margin: 0 0 20px 0;
     text-align: center;
 }
-
 .Intro p {
     font-size: 20px;
     line-height: 1.4;
     margin: 10 0 20px 0;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
-
-/* Right */
+/* Right Introduction */
 .Korina {
     width: 50%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
 }
-
 .Korina img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: bottom;
+    display: block;
+}
+#Slogan {
+    margin: 0;
+    text-align: center;
+    background-color: #697F96;
+    color: black;
+    padding: 40px;
+    font-size: 80px;
+    font-family: "Playfair Display", serif;
+}
+                                                    /* Services section */
+#Services .separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* <hr> estilizado */
+#Services .separador::before,
+#Services .separador::after {
+    content: "";
+    flex: 1;
+    height: 5px;
+    margin-top: 70px;
+    background-color: #17223C;
+}
+#Services .separador span {
+    font-weight: 700;
+    font-size: 32px;
+    color: #17223C;
+    font-family: 'Merriweather', sans-serif;
+    margin-top: 70px;
+    letter-spacing: 1.5px;
+}
+
+                                                    /* Programs section */
+#Programs .separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* <hr> estilizado */
+#Programs .separador::before,
+#Programs .separador::after {
+    content: "";
+    flex: 1;
+    height: 5px;
+    margin: 70px 0 50px 0;
+    background-color: #17223C;
+}
+#Programs .separador h3 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #17223C;
+    font-family: 'Merriweather', sans-serif;
+    margin: 70px 0 50px 0;
+    letter-spacing: 1.5px;
+}
+
+#Programs .desc-ebooks {
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    line-height: 1.4;
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+}
+#Programs span {
+    font-weight: bold;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    display: block;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 22px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;  /* grosor */
+    text-underline-offset: 3px; 
+    letter-spacing: 1.3px;
+}
+
+                                                /* Cards */
+/* Card 1 */
+.card-grid {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+/* Tarjeta */
+.card {
+    position: relative;
+    /* necesario para los botones */
+    background-color: #A7B4C2;
+    width: 260px;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
+/* Ebook Image */
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+/* Title */
+.title {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+/* Old price */
+.old-price {
+    text-decoration: line-through;
+    color: #bb0000;
+    font-size: 15px;
+    margin: 0;
+    padding: auto;
+    font-family: "Poppins", sans-serif;
+}
+/* Current price */
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 15px 0;
+    font-family: "Poppins", sans-serif;
+}
+/* Fav button */
+.fav-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 4px 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+/* Fav hover efectos */
+.fav-btn:hover {
+    color: red;
+}
+.fav-btn:hover::before {
+    content: "♥";
+}
+.fav-btn::before {
+    content: "♡";
+}
+/* Cart button */
+.cart-btn {
+    position: center;
+    bottom: 12px;
+    background: #5474a1;
+    color: white;
+    border: none;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 9px 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+/* Cart hover efectos */
+.cart-btn:hover {
+    background-color: #17223C;
+}
+                                                    /* Store section */
+#Store .separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* <hr> estilizado */
+#Store .separador::before,
+#Store .separador::after {
+    content: "";
+    flex: 1;
+    height: 5px;
+    background-color: #17223C;
+}
+#Store .separador span {
+    font-weight: 700;
+    font-size: 32px;
+    color: #17223C;
+    font-family: 'Merriweather', sans-serif;
+    letter-spacing: 1.5px;
+}
+                                                    /* Collabs section */
+#Collabs .separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* <hr> estilizado */
+#Collabs .separador::before,
+#Collabs .separador::after {
+    content: "";
+    flex: 1;
+    height: 5px;
+    margin-top: 70px;
+    background-color: #17223C;
+}
+#Collabs .separador span {
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 70px;
+    color: #17223C;
+    font-family: 'Merriweather', sans-serif;
+    letter-spacing: 1.5px;
+}
+                                                    /*Footer section*/
+#footer {
+    text-align: center; 
+    padding: 10px; 
+    background-color: #A7B4C2; 
+    color: black;
+}
+#footer .support {
+    margin: 15px; 
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+}
+#footer .follow {
+    margin: 20px; 
+    font-family: 'Poppins', sans-serif;
+}
+#footer .social-list {
+    list-style: none; 
+    padding: 0; 
+    margin-left: 20px;
+}
+#footer .social-list li {
+    display: inline-block; 
+    margin-right: 20px;
+}
+#footer .social-list li a img {
+    width: 35px; 
+    height: 35px;
 }
