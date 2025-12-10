@@ -3,25 +3,31 @@
     box-sizing: border-box;
 }
 
+/* Navigation bar */
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     text-align: center;
     padding: 10px;
     background-color: #17223C;
     color: white;
 }
-
-                                                    /* Navigation bar */
 .navegation a {
+    display: inline-block;
     color: white;
     text-decoration: none;
     font-size: 25px;
     font-family: "Poppins", sans-serif;
+    transition: transform 0.2s ease;
+}
+.navegation a:hover {
+    transform: scale(1.1);
 }
 .navegation ul {
     display: flex;
     justify-content: center;
-    gap: 70px;
-    /* separación entre enlaces */
+    gap: 70px; /* separación entre enlaces */
     padding: 10;
     margin: 10;
     list-style: none;
@@ -33,12 +39,13 @@ body {
     background-color: #faf7ef;
 }
 
-                                                    /* Main container */
+/* Main container */
 .Introduction {
     display: flex;
     height: 100vh;
     /* alto de la pantalla completa */
 }
+
 /* Left Introduction*/
 .Intro {
     width: 50%;
@@ -69,6 +76,7 @@ body {
     text-align: center;
     font-family: 'Lato', sans-serif;
 }
+
 /* Right Introduction */
 .Korina {
     width: 50%;
@@ -83,6 +91,7 @@ body {
     object-position: bottom;
     display: block;
 }
+
 #Slogan {
     margin: 0;
     text-align: center;
@@ -92,7 +101,8 @@ body {
     font-size: 80px;
     font-family: "Playfair Display", serif;
 }
-                                                    /* Services section */
+
+/* Services section */
 #Services .separador {
     display: flex;
     align-items: center;
@@ -101,7 +111,6 @@ body {
     max-width: 80%;
     margin: 0 auto;
 }
-
 /* <hr> estilizado */
 #Services .separador::before,
 #Services .separador::after {
@@ -111,7 +120,7 @@ body {
     margin-top: 70px;
     background-color: #17223C;
 }
-#Services .separador span {
+#Services .separador h3 {
     font-weight: 700;
     font-size: 32px;
     color: #17223C;
@@ -120,7 +129,7 @@ body {
     letter-spacing: 1.5px;
 }
 
-                                                    /* Programs section */
+/* Programs section */
 #Programs .separador {
     display: flex;
     align-items: center;
@@ -165,13 +174,14 @@ body {
     font-family: 'Merriweather', sans-serif;
     font-size: 22px;
     text-decoration: underline;
-    text-decoration-thickness: 2px;  /* grosor */
-    text-underline-offset: 3px; 
+    text-decoration-thickness: 2px;
+    /* grosor */
+    text-underline-offset: 3px;
     letter-spacing: 1.3px;
 }
 
-                                                /* Cards */
-/* Card 1 */
+/* Cards */
+/* Cards Grid */
 .card-grid {
     display: flex;
     gap: 100px;
@@ -179,7 +189,8 @@ body {
     justify-content: center;
     margin-bottom: 70px;
 }
-/* Tarjeta */
+
+/* Card */
 .card {
     position: relative;
     /* necesario para los botones */
@@ -188,7 +199,14 @@ body {
     padding: 10px;
     border-radius: 12px;
     text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform .3s;
 }
+.card:hover {
+    transform: translateY(-5px);
+}
+
 /* Ebook Image */
 .card img {
     width: 100%;
@@ -196,6 +214,7 @@ body {
     object-fit: contain;
     border-radius: 8px;
 }
+
 /* Title */
 .title {
     font-family: "Poppins", sans-serif;
@@ -203,23 +222,7 @@ body {
     font-weight: 500;
     color: black;
 }
-/* Old price */
-.old-price {
-    text-decoration: line-through;
-    color: #bb0000;
-    font-size: 15px;
-    margin: 0;
-    padding: auto;
-    font-family: "Poppins", sans-serif;
-}
-/* Current price */
-.price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000;
-    margin: 0 0 15px 0;
-    font-family: "Poppins", sans-serif;
-}
+
 /* Fav button */
 .fav-btn {
     position: absolute;
@@ -233,6 +236,7 @@ body {
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
+
 /* Fav hover efectos */
 .fav-btn:hover {
     color: red;
@@ -243,24 +247,51 @@ body {
 .fav-btn::before {
     content: "♡";
 }
+
+/* Old price */
+.old-price {
+    text-decoration: line-through;
+    color: #bb0000;
+    font-size: 15px;
+    margin: 0 0 0 20px;
+    padding: auto;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+}
+/* Current price */
+.price {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 15px 20px;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+}
+
 /* Cart button */
 .cart-btn {
-    position: center;
-    bottom: 12px;
-    background: #5474a1;
-    color: white;
+    position: absolute;
+    background: none;
     border: none;
-    font-size: 14px;
-    border-radius: 10px;
-    padding: 9px 30px;
+    padding: 0;
+    margin: 0 0 13px 0;
     cursor: pointer;
-    margin-bottom: 20px;
+    right: 25px;
+    /* Separación del borde derecho */
+    bottom: 20px;
 }
-/* Cart hover efectos */
-.cart-btn:hover {
-    background-color: #17223C;
+.cart-btn img {
+    width: 30px;
+    height: auto;
+    border-radius: 0;
+    transition: transform 0.2s ease;
 }
-                                                    /* Store section */
+.cart-btn img:hover {
+    transform: scale(1.15);
+}
+
+/* Store section */
 #Store .separador {
     display: flex;
     align-items: center;
@@ -277,14 +308,15 @@ body {
     height: 5px;
     background-color: #17223C;
 }
-#Store .separador span {
+#Store .separador h3 {
     font-weight: 700;
     font-size: 32px;
     color: #17223C;
     font-family: 'Merriweather', sans-serif;
     letter-spacing: 1.5px;
 }
-                                                    /* Collabs section */
+
+/* Collabs section */
 #Collabs .separador {
     display: flex;
     align-items: center;
@@ -302,7 +334,7 @@ body {
     margin-top: 70px;
     background-color: #17223C;
 }
-#Collabs .separador span {
+#Collabs .separador h3 {
     font-weight: 700;
     font-size: 32px;
     margin-top: 70px;
@@ -310,32 +342,102 @@ body {
     font-family: 'Merriweather', sans-serif;
     letter-spacing: 1.5px;
 }
-                                                    /*Footer section*/
+
+#Collabs .desc-collabs {
+    max-width: 1000px;
+    text-align: center;
+    margin: 50px auto 30px auto;
+    display: block;
+    line-height: 1.4;
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+}
+
+/*Profile Card*/
+.profile-card {
+    background-color: #3D3D3D;
+    width: 330px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    display: block;
+    /* aseguras comportamiento de bloque */
+    margin-left: auto;
+    margin: 50px 10% 50px auto;
+    font-family: 'Poppins', sans-serif;
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.name {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+}
+.location {
+    color: #4596D6;
+    /* verde limón como en la imagen */
+    font-size: 14px;
+    margin: 5px 0 10px;
+}
+.bio {
+    font-size: 16px;
+    color: #cfcfcf;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+.links a {
+    display: block;
+    width: 100%;
+    background-color: #787878;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+}
+.links a:hover {
+    background-color: #333;
+}
+
+/*Footer section*/
 #footer {
-    text-align: center; 
-    padding: 10px; 
-    background-color: #A7B4C2; 
+    text-align: center;
+    padding: 10px;
+    background-color: #A7B4C2;
     color: black;
 }
 #footer .support {
-    margin: 15px; 
+    margin: 15px;
     font-family: 'Lato', sans-serif;
     font-size: 17px;
 }
-#footer .follow {
-    margin: 20px; 
+
+.start {
+    position: fixed;
+    z-index: 1100;
+    bottom: 40px;
+    right: 40px;
+    background-color: #17223C;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
 }
-#footer .social-list {
-    list-style: none; 
-    padding: 0; 
-    margin-left: 20px;
-}
-#footer .social-list li {
-    display: inline-block; 
-    margin-right: 20px;
-}
-#footer .social-list li a img {
-    width: 35px; 
-    height: 35px;
+.start:hover {
+    background-color: #0f1a2b;
+    transform:  scale(1.1);
 }
