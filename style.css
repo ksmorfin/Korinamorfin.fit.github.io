@@ -12,6 +12,7 @@ header {
     z-index: 1000;
     background-color: black;
 }
+
 .badge-1 {
     background-color: #0F0F0F;
     color: white;
@@ -20,9 +21,11 @@ header {
     padding: 10px 0;
     letter-spacing: 1.2px;
 }
+
 .badge-1 .underline {
     text-decoration: underline;
 }
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -31,6 +34,7 @@ header {
     padding: 12px;
     margin-left: 60px;
 }
+
 .navegation a {
     display: inline-block;
     transform-origin: center;
@@ -41,21 +45,25 @@ header {
     margin-right: 20px;
     transition: transform 0.2s ease;
 }
+
 .navegation a:hover {
     transform: scale(1.1);
 }
+
 .media {
     display: flex;
     align-items: center;
     gap: 16px;
     margin-right: 60px;
 }
+
 .media img {
     display: block;
     width: 22px;
     height: 22px;
     transition: transform 0.2s ease;
 }
+
 .media img:hover {
     transform: scale(1.1);
 }
@@ -71,9 +79,11 @@ body {
     width: 100%;
     height: auto;
 }
+
 #hello {
     text-align: center;
 }
+
 /* Introduction */
 .Introduction {
     display: block;
@@ -82,6 +92,7 @@ body {
     margin: 50px auto 40px auto;
     text-align: center;
 }
+
 .Introduction h1 {
     font-size: 50px;
     font-family: "Hubballi", sans-serif;
@@ -89,6 +100,7 @@ body {
     margin: 0;
     text-align: center;
 }
+
 .Introduction h2 {
     font-size: 16px;
     font-family: "Hubballi", sans-serif;
@@ -97,6 +109,7 @@ body {
     text-align: center;
     letter-spacing: 0.8px;
 }
+
 .Introduction p {
     font-size: 14px;
     line-height: 1.4;
@@ -105,9 +118,11 @@ body {
     letter-spacing: 0.5px;
     font-weight: 300;
 }
+
 .Introduction .bold {
     font-weight: 500;
 }
+
 #hello .startnow {
     display: inline-block;
     margin: 0 auto 40px;
@@ -125,6 +140,7 @@ body {
 #hello .startnow:hover {
     border-color: black;
 }
+
 #Slogan {
     margin: 0;
     text-align: center;
@@ -142,8 +158,8 @@ body {
 /* Services section */
 #Services .separador {
     display: flex;
-    align-items: center;      /* Alinea texto y línea verticalmente */
-    gap: 32px;                /* Espacio entre texto y línea */
+    align-items: center; /* Alinea verticalmente */
+    gap: 32px;
     margin: 60px 60px 40px;
 }
 #Services h3 {
@@ -153,7 +169,7 @@ body {
     letter-spacing: 1.8px;
     font-family: 'Urbanist', sans-serif;
     color: black;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 /* <hr> estilizado */
 #Services .separador::after {
@@ -163,22 +179,103 @@ body {
     background-color: #17223C;
     transform: translateY(6px);
 }
+#Services .desc-services {
+    display: block;
+    font-size: 13px;
+    text-align: left;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin: 0 0 30px 60px;
+}
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.pricing-card {
+    background: #ffffff;
+    max-width: 380px;
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    font-family: "Urbanist", sans-serif;
+}
+.pricing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.pricing-badge {
+    background: #000;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 600;
+}
+.pricing-duration {
+    background: #f2f2f2;
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 500;
+}
+.pricing {
+    font-size: 45px;
+    font-weight: 700;
+}
+.pricing span {
+    font-size: 24px;
+    font-weight: 700;
+}
+.pricing-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 30px;
+    padding: 12px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin: 20px 0 25px;
+}
+.pricing-btn:hover {
+    border-color: black;
+}
+.pricing-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
 
 /* Programs section */
 #Programs .separador {
     display: flex;
-    align-items: center;      /* Alinea texto y línea verticalmente */
-    gap: 32px;                /* Espacio entre texto y línea */
+    align-items: center;
+    /* Alinea texto y línea verticalmente */
+    gap: 32px;
+    /* Espacio entre texto y línea */
     margin: 60px 60px 40px;
 }
 #Programs h3 {
-    margin: 0;                /* CLAVE: quita márgenes conflictivos */
+    margin: 0;
+    /* CLAVE: quita márgenes conflictivos */
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1.8px;
     font-family: 'Urbanist', sans-serif;
     color: black;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 /* <hr> estilizado */
 #Programs .separador::after {
@@ -188,9 +285,9 @@ body {
     background-color: #17223C;
     transform: translateY(6px);
 }
-#Programs .desc-ebooks {
+#Programs .desc-programs {
     display: block;
-    font-size: 12px;
+    font-size: 13px;
     text-align: left;
     letter-spacing: 1.2px;
     font-weight: 500;
@@ -216,7 +313,8 @@ body {
 }
 /* Card */
 .card {
-    position: relative;     /* para los botones */
+    position: relative;
+    /* para los botones */
     background-color: white;
     width: 200px;
     border-radius: 12px;
@@ -226,7 +324,6 @@ body {
 .card:hover {
     transform: translateY(-5px);
 }
-
 /* Ebook Image */
 .card img {
     width: 100%;
@@ -284,7 +381,8 @@ body {
     padding: 0;
     margin: 0;
     cursor: pointer;
-    right: 5px;      /* Separación del borde derecho */
+    right: 5px;
+    /* Separación del borde derecho */
     bottom: 10px;
 }
 .cart-btn img {
@@ -300,8 +398,10 @@ body {
 /* Store section */
 #Store .separador {
     display: flex;
-    align-items: center;      /* Alinea texto y línea verticalmente */
-    gap: 32px;                /* Espacio entre texto y línea */
+    align-items: center;
+    /* Alinea texto y línea verticalmente */
+    gap: 32px;
+    /* Espacio entre texto y línea */
     margin: 60px 60px 40px;
 }
 #Store h3 {
@@ -311,7 +411,7 @@ body {
     letter-spacing: 1.8px;
     font-family: 'Urbanist', sans-serif;
     color: black;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 /* <hr> estilizado */
 #Store .separador::after {
@@ -325,10 +425,13 @@ body {
 /* Collabs section */
 #Collabs .separador {
     display: flex;
-    align-items: center;      /* Alinea texto y línea verticalmente */
-    gap: 32px;                /* Espacio entre texto y línea */
+    align-items: center;
+    /* Alinea texto y línea verticalmente */
+    gap: 32px;
+    /* Espacio entre texto y línea */
     margin: 60px 60px 40px;
 }
+
 #Collabs h3 {
     margin: 0;
     font-weight: 600;
@@ -336,8 +439,9 @@ body {
     letter-spacing: 1.8px;
     font-family: 'Urbanist', sans-serif;
     color: black;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
+
 /* <hr> estilizado */
 #Collabs .separador::after {
     content: "";
@@ -346,21 +450,26 @@ body {
     background-color: #17223C;
     transform: translateY(6px);
 }
+
 #Collabs .desc-collabs {
     display: block;
-    font-size: 12px;
+    font-size: 13px;
     text-align: left;
     letter-spacing: 3.0px;
     margin: 0 0 0 60px;
     font-weight: 500;
 }
+
 #Collabs .collabs-content {
+    flex-wrap: wrap;
     display: flex;
     gap: 60px;
     justify-content: flex-start;
     margin: 60px 0;
     padding-left: 150px;
+    padding-right: 150px;
 }
+
 #Collabs .contact-form {
     flex: 1;
     max-width: 600px;
@@ -368,19 +477,23 @@ body {
     flex-direction: column;
     gap: 15px;
 }
+
 #Collabs .contact-form input,
 #Collabs .contact-form textarea {
-    padding: 12px 16px;      /* ↓ antes estaba muy alto */
+    padding: 12px 16px;
+    /* ↓ antes estaba muy alto */
     font-size: 14px;
     border: 2px solid #dcdcdc;
     border-radius: 6px;
     font-family: "Urbanist", sans-serif;
     letter-spacing: 0.8px;
 }
+
 #Collabs .contact-form textarea {
     min-height: 45px;
     resize: none;
 }
+
 #Collabs .contact-form button {
     width: fit-content;
     margin: 0 auto;
@@ -395,30 +508,37 @@ body {
     cursor: pointer;
     transition: border-color 0.2s ease;
 }
+
 #Collabs .contact-form button:hover {
     border-color: black;
 }
+
 #Collabs .phone-group {
     display: flex;
     align-items: center;
     border: 2px solid #dcdcdc;
     border-radius: 6px;
-    overflow: hidden;          /* ← CLAVE */
+    overflow: hidden;
+    /* ← CLAVE */
     background-color: #f2f2f2;
 }
+
 #Collabs .phone-group .flag {
     padding: 0 14px;
     background-color: none;
     font-size: 18px;
 }
-#Collabs .phone-group input {          /* ← elimina borde interno */
+
+#Collabs .phone-group input {
+    /* ← elimina borde interno */
     background: white;
     flex: 1;
     padding: 12px 16px;
     font-size: 14px;
     outline: none;
-    border: none; 
+    border: none;
 }
+
 /*Profile Card*/
 .profile-card {
     background-color: #3D3D3D;
@@ -429,8 +549,8 @@ body {
     color: white;
     display: block;
     margin-left: auto;
-    margin-right: 150px;
 }
+
 .profile-img {
     width: 120px;
     height: 120px;
@@ -438,12 +558,14 @@ body {
     object-fit: cover;
     margin-bottom: 10px;
 }
+
 .name {
     font-size: 16px;
     font-weight: 500;
     margin: 0;
     letter-spacing: 1.2px;
 }
+
 .bio {
     font-size: 12px;
     color: #cfcfcf;
@@ -451,11 +573,13 @@ body {
     font-weight: 400;
     letter-spacing: 0.5px;
 }
+
 .location {
     color: #4596D6;
     font-size: 11px;
     margin-bottom: 15px;
 }
+
 .links a {
     display: block;
     width: 100%;
@@ -470,6 +594,7 @@ body {
     text-decoration: none;
     text-align: center;
 }
+
 .links a:hover {
     background-color: #333;
 }
@@ -481,16 +606,19 @@ body {
     background-color: #F9F9F9;
     color: black;
 }
+
 #footer .support {
     margin: 15px;
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: 0.8px;
 }
+
 #footer .email {
     font-size: 14px;
     font-weight: 500;
 
 }
+
 #footer .rights {
     margin: 15px;
     font-size: 10px;
@@ -511,7 +639,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
 }
+
 .start:hover {
     background-color: #0f1a2b;
-    transform:  scale(1.1);
+    transform: scale(1.1);
 }
