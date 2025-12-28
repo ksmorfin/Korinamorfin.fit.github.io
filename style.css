@@ -5,6 +5,21 @@
     padding: 0;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
 /* Navigation bar */
 header {
     position: sticky;
@@ -27,12 +42,13 @@ header {
 }
 
 .menu {
+    padding: 12px 0;
+}
+
+.menu .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
-    padding: 12px;
-    margin-left: 60px;
 }
 
 .navegation a {
@@ -54,7 +70,6 @@ header {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-right: 60px;
 }
 
 .media img {
@@ -86,15 +101,13 @@ body {
 
 /* Introduction */
 .Introduction {
-    display: block;
-    width: 800px;
+    max-width: 800px;
     background-color: white;
-    margin: 50px auto 40px auto;
-    text-align: center;
+    margin: 50px auto 40px;
 }
 
 .Introduction h1 {
-    font-size: 50px;
+    font-size: 46px;
     font-family: "Hubballi", sans-serif;
     line-height: 1.1;
     margin: 0;
@@ -113,7 +126,7 @@ body {
 .Introduction p {
     font-size: 14px;
     line-height: 1.4;
-    margin: 10px 20px 20px 0;
+    margin: 10px 0 20px;
     text-align: justify;
     letter-spacing: 0.5px;
     font-weight: 300;
@@ -137,32 +150,42 @@ body {
     background: transparent;
     transition: border-color 0.2s ease;
 }
+
 #hello .startnow:hover {
     border-color: black;
 }
 
 #Slogan {
-    margin: 0;
     text-align: center;
     background-color: #F9F9F9;
     color: black;
-    padding: 100px;
+    padding: 8rem 0;
 }
+
 #Slogan h3 {
-    font-size: 80px;
     font-family: 'Hubballi', sans-serif;
     font-weight: 700;
     letter-spacing: 1.2px;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin: 0;
 }
 
 /* Services section */
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 #Services .separador {
     display: flex;
-    align-items: center; /* Alinea verticalmente */
+    align-items: center;
+    /* Alinea verticalmente */
     gap: 32px;
-    margin: 60px 60px 40px;
+    margin: 60px 0 40px;
 }
-#Services h3 {
+
+#Services h4 {
     margin: 0;
     font-weight: 600;
     font-size: 16px;
@@ -171,6 +194,7 @@ body {
     color: black;
     white-space: nowrap;
 }
+
 /* <hr> estilizado */
 #Services .separador::after {
     content: "";
@@ -179,21 +203,22 @@ body {
     background-color: #17223C;
     transform: translateY(6px);
 }
+
 #Services .desc-services {
-    display: block;
     font-size: 13px;
-    text-align: left;
     letter-spacing: 1.2px;
     font-weight: 500;
-    margin: 0 0 30px 60px;
+    margin-bottom: 30px;
 }
+
 .services-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
     justify-content: center;
+    gap: 40px;
     margin-bottom: 70px;
 }
+
 .pricing-card {
     background: #ffffff;
     max-width: 380px;
@@ -202,12 +227,14 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     font-family: "Urbanist", sans-serif;
 }
+
 .pricing-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
+
 .pricing-badge {
     background: #000;
     color: #fff;
@@ -216,6 +243,7 @@ body {
     font-size: 10px;
     font-weight: 600;
 }
+
 .pricing-duration {
     background: #f2f2f2;
     padding: 6px 12px;
@@ -223,14 +251,17 @@ body {
     font-size: 10px;
     font-weight: 500;
 }
+
 .pricing {
     font-size: 45px;
     font-weight: 700;
 }
+
 .pricing span {
     font-size: 24px;
     font-weight: 700;
 }
+
 .pricing-btn {
     display: flex;
     align-items: center;
@@ -246,9 +277,11 @@ body {
     cursor: pointer;
     margin: 20px 0 25px;
 }
+
 .pricing-btn:hover {
     border-color: black;
 }
+
 .pricing-features li {
     display: flex;
     align-items: center;
@@ -259,15 +292,22 @@ body {
 }
 
 /* Programs section */
+.programs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 #Programs .separador {
     display: flex;
     align-items: center;
     /* Alinea texto y línea verticalmente */
     gap: 32px;
     /* Espacio entre texto y línea */
-    margin: 60px 60px 40px;
+    margin: 60px 0 40px;
 }
-#Programs h3 {
+
+#Programs h4 {
     margin: 0;
     /* CLAVE: quita márgenes conflictivos */
     font-weight: 600;
@@ -277,6 +317,7 @@ body {
     color: black;
     white-space: nowrap;
 }
+
 /* <hr> estilizado */
 #Programs .separador::after {
     content: "";
@@ -285,21 +326,20 @@ body {
     background-color: #17223C;
     transform: translateY(6px);
 }
+
 #Programs .desc-programs {
-    display: block;
     font-size: 13px;
-    text-align: left;
     letter-spacing: 1.2px;
     font-weight: 500;
-    margin-left: 60px;
+    margin-bottom: 40px;
 }
-#Programs span {
+
+.programs-category {
     display: block;
     font-size: 14px;
-    text-align: left;
     letter-spacing: 3.0px;
     font-weight: 600;
-    margin: 30px 0 30px 100px;
+    margin: 40px 0 30px;
 }
 
 /* Cards */
@@ -307,10 +347,11 @@ body {
 .card-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
     justify-content: center;
-    margin-bottom: 70px;
+    gap: 40px;
+    margin-bottom: 60px;
 }
+
 /* Card */
 .card {
     position: relative;
@@ -321,9 +362,11 @@ body {
     text-align: left;
     transition: transform .3s;
 }
+
 .card:hover {
     transform: translateY(-5px);
 }
+
 /* Ebook Image */
 .card img {
     width: 100%;
@@ -331,6 +374,7 @@ body {
     object-fit: contain;
     border-radius: 8px;
 }
+
 .fav-btn {
     position: absolute;
     top: 12px;
@@ -343,15 +387,19 @@ body {
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
+
 .fav-btn:hover {
     color: red;
 }
+
 .fav-btn:hover::before {
     content: "♥";
 }
+
 .fav-btn::before {
     content: "♡";
 }
+
 .title {
     font-size: 14px;
     font-weight: 300;
@@ -359,6 +407,7 @@ body {
     color: black;
     margin: 8px 0 4px 4px;
 }
+
 .desc {
     font-size: 12px;
     font-weight: 400;
@@ -366,6 +415,7 @@ body {
     color: gray;
     margin: 3px 0 3px 4px;
 }
+
 .price {
     display: block;
     font-size: 11px;
@@ -374,6 +424,7 @@ body {
     line-height: 1.4;
     margin: 3px 0 3px 4px;
 }
+
 .cart-btn {
     position: absolute;
     background: none;
@@ -385,26 +436,34 @@ body {
     /* Separación del borde derecho */
     bottom: 10px;
 }
+
 .cart-btn img {
     width: 20px;
     height: auto;
     border-radius: 0;
     transition: transform 0.2s ease;
 }
+
 .cart-btn img:hover {
     transform: scale(1.15);
 }
 
 /* Store section */
+.store-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 #Store .separador {
     display: flex;
     align-items: center;
-    /* Alinea texto y línea verticalmente */
     gap: 32px;
     /* Espacio entre texto y línea */
-    margin: 60px 60px 40px;
+    margin: 60px 0 40px;
 }
-#Store h3 {
+
+#Store h4 {
     margin: 0;
     font-weight: 600;
     font-size: 16px;
@@ -413,6 +472,7 @@ body {
     color: black;
     white-space: nowrap;
 }
+
 /* <hr> estilizado */
 #Store .separador::after {
     content: "";
@@ -423,16 +483,20 @@ body {
 }
 
 /* Collabs section */
+.collabs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 #Collabs .separador {
     display: flex;
     align-items: center;
-    /* Alinea texto y línea verticalmente */
     gap: 32px;
-    /* Espacio entre texto y línea */
-    margin: 60px 60px 40px;
+    margin: 60px 0 40px;
 }
 
-#Collabs h3 {
+#Collabs h4 {
     margin: 0;
     font-weight: 600;
     font-size: 16px;
@@ -452,29 +516,25 @@ body {
 }
 
 #Collabs .desc-collabs {
-    display: block;
     font-size: 13px;
-    text-align: left;
     letter-spacing: 3.0px;
-    margin: 0 0 0 60px;
     font-weight: 500;
+    margin-bottom: 40px;
 }
 
 #Collabs .collabs-content {
     flex-wrap: wrap;
     display: flex;
     gap: 60px;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 60px 0;
-    padding-left: 150px;
-    padding-right: 150px;
 }
 
 #Collabs .contact-form {
-    flex: 1;
-    max-width: 600px;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    max-width: 600px;
     gap: 15px;
 }
 
@@ -541,14 +601,14 @@ body {
 
 /*Profile Card*/
 .profile-card {
-    background-color: #3D3D3D;
+    display: block;
     width: 330px;
     padding: 30px 30px 20px 30px;
     border-radius: 20px;
     text-align: center;
     color: white;
-    display: block;
-    margin-left: auto;
+    background-color: #3D3D3D;
+    flex-shrink: 0;
 }
 
 .profile-img {
@@ -602,7 +662,7 @@ body {
 /*Footer section*/
 #footer {
     text-align: center;
-    padding: 50px;
+    padding: 50px 20px;
     background-color: #F9F9F9;
     color: black;
 }
@@ -616,7 +676,6 @@ body {
 #footer .email {
     font-size: 14px;
     font-weight: 500;
-
 }
 
 #footer .rights {
@@ -643,4 +702,94 @@ body {
 .start:hover {
     background-color: #0f1a2b;
     transform: scale(1.1);
+}
+
+/* MEDIA QUERIES */
+/* Tablet */
+@media (max-width: 1024px) {
+
+    .container,
+    .collabs-container {
+        padding: 0 32px;
+    }
+
+    .services-grid {
+        gap: 60px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .navegation {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        gap: 20px;
+        background-color: black;
+        text-align: center;
+        padding: 20px 0;
+
+        /* Menu oculto */
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .navegation.active {
+        transform: translateY(-10px);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .navegation a {
+        padding: 8px 0;
+        font-size: 15px;
+        letter-spacing: 1.2px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* MAIN */
+    #Slogan {
+        padding: 4rem 0;
+    }
+
+    #Slogan h3 {
+        line-height: 1.5;
+    }
+
+    .container,
+    .collabs-container {
+        padding: 0 20px;
+    }
+
+    #Collabs .collabs-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profile-card {
+        margin-top: 40px;
+    }
+
+    /* FOOTER */
+    #footer {
+        padding: 20px 20px;
+    }
+
+    .start {
+        font-size: 14px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
 }
