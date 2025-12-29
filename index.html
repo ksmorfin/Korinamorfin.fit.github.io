@@ -23,37 +23,42 @@
     <!--Navigation Bar-->
     <div class="menu">
         <div class="container">
-            <button class="menu-toggle">☰</button>
-            <nav class="navegation">
-                <a href="#Services">Services</a>
-                <a href="#Programs">Programs</a>
-                <a href="#Store">Store</a>
-                <a href="#Collabs">Collabs</a>
+            <button class="menu-toggle" aria-label="Open menu">☰</button>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#store">Store</a></li>
+                    <li><a href="#collabs">Collabs</a></li>
+                </ul>
             </nav>
             <div class="media">
-                <a href="https://m.facebook.com/profile.php?id=61584379673623" target="_blank">
-                    <img src="img/Facebook1.png" alt="Facebook">
-                </a>
-                <a href="https://www.instagram.com/korinamorfin.fit/" target="_blank">
-                    <img src="img/Instagram1.png" alt="Instagram">
-                </a>
-                <a href="https://www.tiktok.com/@korinamorfin" target="_blank">
-                    <img src="img/Tiktok1.png" alt="TikTok">
-                </a>
-                <a href="https://www.youtube.com/@korinamorfin" target="_blank">
-                    <img src="img/Youtube1.png" alt="YouTube">
-                </a>
+                <ul>
+                    <li><a href="https://m.facebook.com/profile.php?id=61584379673623" target="_blank">
+                            <img src="img/Facebook1.png" alt="Facebook">
+                        </a></li>
+                    <li><a href="https://www.instagram.com/korinamorfin.fit/" target="_blank">
+                            <img src="img/Instagram1.png" alt="Instagram">
+                        </a></li>
+                    <li><a href="https://www.tiktok.com/@korinamorfin" target="_blank">
+                            <img src="img/Tiktok1.png" alt="TikTok">
+                        </a></li>
+                    <li><a href="https://www.youtube.com/@korinamorfin" target="_blank">
+                            <img src="img/Youtube1.png" alt="YouTube">
+                        </a></li>
+                </ul>
             </div>
         </div>
     </div>
 </header>
 
 <body>
-    <img class="Banner" src="img/Banner.jpeg" alt="Korina Morfin Banner">
+    <main>
     <!--Introduction section-->
     <section id="hello">
+        <img class="banner" src="img/Banner.jpeg" alt="Korina Morfin Banner">
         <div class="container">
-            <div class="Introduction">
+            <div class="introduction">
                 <h1>KORINA MORFIN</h1>
                 <h2>CERTIFIED PERSONAL TRAINER</h2>
                 <article>
@@ -77,20 +82,19 @@
                         of yourself.
                     </p>
                 </article>
+                <a class="startnow" href="#Services">START NOW</a>
             </div>
-            <a class="startnow" href="#Services">START NOW</a>
+        </div>
+        <!--Slogan-->
+        <div id="slogan">
+            <div class="container">
+                <h3>TRAIN SMART, GROW STRONG</h3>
+            </div>
         </div>
     </section>
-    <!--Slogan-->
-    <div id="Slogan">
-        <div class="container">
-            <h3>TRAIN SMART, GROW STRONG</h3>
-        </div>
-    </div>
-    <main>
         <!--Services section-->
-        <section id="Services">
-            <div class="services-container">
+        <section id="services">
+            <div class="container">
                 <div class="separador">
                     <h4>SERVICES</h4>
                 </div>
@@ -168,8 +172,8 @@
             </div>
         </section>
         <!--Programs section-->
-        <section id="Programs">
-            <div class="programs-container">
+        <section id="programs">
+            <div class="container">
                 <div class="separador">
                     <h4>PROGRAMS</h4>
                 </div>
@@ -179,86 +183,86 @@
                 <span class="programs-category">TRAINING</span>
                 <div class="card-grid">
                     <div class="card">
-                        <button class="fav-btn"></button>
+                        <button class="fav-btn" aria-label="Add to favorites"></button>
                         <img src="img/Home training ebook.png" alt="Home Training e-book">
                         <p class="title">TRAINING FROM HOME</p>
                         <p class="desc">Training ebook</p>
                         <p class="price">$25 USD</p>
-                        <button class="cart-btn">
+                        <button class="cart-btn" aria-label="Add to cart">
                             <img src="img/Cart.png" alt="Cart Icon"></button>
                     </div>
                     <div class="card">
-                        <button class="fav-btn"></button>
+                        <button class="fav-btn" aria-label="Add to favorites"></button>
                         <img src="img/Weekly Plan ebook.png" alt="Weekly Plan e-book">
                         <p class="title">WEEKLY PLAN</p>
                         <p class="desc">Training ebook</p>
                         <p class="price">$25 USD</p>
-                        <button class="cart-btn">
+                        <button class="cart-btn" aria-label="Add to cart">
                             <img src="img/Cart.png" alt="Cart Icon"></button>
                     </div>
                     <div class="card">
-                        <button class="fav-btn"></button>
+                        <button class="fav-btn" aria-label="Add to favorites"></button>
                         <img src="img/Training ebook.png" alt="Keep Training e-book">
                         <p class="title">KEEP TRAINING</p>
                         <p class="desc">Training ebook</p>
                         <p class="price">$25 USD</p>
-                        <button class="cart-btn">
+                        <button class="cart-btn" aria-label="Add to cart">
                             <img src="img/Cart.png" alt="Cart Icon"></button>
                     </div>
                     <div class="card">
-                        <button class="fav-btn"></button>
+                        <button class="fav-btn" aria-label="Add to favorites"></button>
                         <img src="img/Beginners ebook.png" alt="Guide for Beginners e-book">
                         <p class="title">BEGINNERS GUIDE</p>
                         <p class="desc">Training ebook</p>
                         <p class="price">$25 USD</p>
-                        <button class="cart-btn">
+                        <button class="cart-btn" aria-label="Add to cart">
                             <img src="img/Cart.png" alt="Cart Icon"></button>
                     </div>
                 </div>
                 <span class="programs-category">NUTRITION</span>
                 <div class="card-grid">
                     <div class="card">
-                        <button class="fav-btn"></button>
+                        <button class="fav-btn" aria-label="Add to favorites"></button>
                         <img src="img/Healthy recipes.png" alt="Healthy Recipes e-book">
                         <p class="title">HEALTHY RECIPES</p>
                         <p class="desc">Nutritional ebook</p>
                         <p class="price">$25 USD</p>
-                        <button class="cart-btn">
+                        <button class="cart-btn" aria-label="Add to cart">
                             <img src="img/Cart.png" alt="Cart Icon"></button>
                     </div>
                     <div class="card">
-                        <button class="fav-btn"></button>
+                        <button class="fav-btn" aria-label="Add to favorites"></button>
                         <img src="img/Healthy snacks.png" alt="Healthy Snacking e-book">
                         <p class="title">HEALTHY SNACKING</p>
                         <p class="desc">Nutritional ebook</p>
                         <p class="price">$25 USD</p>
-                        <button class="cart-btn">
+                        <button class="cart-btn" aria-label="Add to cart">
                             <img src="img/Cart.png" alt="Cart Icon"></button>
                     </div>
                     <div class="card">
-                        <button class="fav-btn"></button>
+                        <button class="fav-btn" aria-label="Add to favorites"></button>
                         <img src="img/Vegetarian ebook.png" alt="Vegetarian e-book">
                         <p class="title">VEGETARIAN RECIPES</p>
                         <p class="desc">Nutritional ebook</p>
                         <p class="price">$25 USD</p>
-                        <button class="cart-btn">
+                        <button class="cart-btn" aria-label="Add to cart">
                             <img src="img/Cart.png" alt="Cart Icon"></button>
                     </div>
                     <div class="card">
-                        <button class="fav-btn"></button>
+                        <button class="fav-btn" aria-label="Add to favorites"></button>
                         <img src="img/Desserts ebook.png" alt="Desserts e-book">
                         <p class="title">FIT DESSERTS</p>
                         <p class="desc">Nutritional ebook</p>
                         <p class="price">$25 USD</p>
-                        <button class="cart-btn">
+                        <button class="cart-btn" aria-label="Add to cart">
                             <img src="img/Cart.png" alt="Cart Icon"></button>
                     </div>
                 </div>
             </div>
         </section>
         <!--Store section-->
-        <section id="Store">
-            <div class="store-container">
+        <section id="store">
+            <div class="container">
                 <div class="separador">
                     <h4>STORE</h4>
                 </div>
@@ -267,67 +271,67 @@
                 </p>
                 <div class="grid-container">
                     <div class="item item-1">
-                        <a href="#Store" class="store-link">
+                        <a href="#" class="store-link">
                             <img src="img/T-shirts.png" alt="T-shirts">
                             <span class="item-label">T-SHIRTS</span>
                         </a>
                     </div>
                     <div class="item item-2">
-                        <a href="#Store" class="store-link">
+                        <a href="#" class="store-link">
                             <img src="img/Hats.png" alt="Hats">
                             <span class="item-label">HATS</span>
                         </a>
                     </div>
                     <div class="item item-3">
-                        <a href="#Store" class="store-link">
+                        <a href="#" class="store-link">
                             <img src="img/Equipment.png" alt="Equipment">
                             <span class="item-label">EQUIPMENT</span>
                         </a>
                     </div>
                     <div class="item item-4">
-                        <a href="#Store" class="store-link">
+                        <a href="#" class="store-link">
                             <img src="img/Hoodies.png" alt="Hoodies">
                             <span class="item-label">HOODIES</span>
                         </a>
                     </div>
                     <div class="item item-5">
-                        <a href="#Store" class="store-link">
+                        <a href="#" class="store-link">
                             <img src="img/Leggings.png" alt="Leggings">
                             <span class="item-label">LEGGINGS</span>
                         </a>
                     </div>
                     <div class="item item-6">
-                        <a href="#Store" class="store-link">
+                        <a href="#" class="store-link">
                             <img src="img/Underwear.png" alt="Underwear">
                             <span class="item-label">UNDERWEAR</span>
                         </a>
                     </div>
                     <div class="item item-7">
-                        <a href="#Store" class="store-link">
+                        <a href="#" class="store-link">
                             <img src="img/Accesories.png" alt="Accesories">
                             <span class="item-label">ACCESORIES</span>
                         </a>
                     </div>
                     <div class="item item-8">
-                        <a href="#Store" class="store-link">
+                        <a href="#" class="store-link">
                             <img src="img/Bags.png" alt="Bags">
                             <span class="item-label">BAGS</span>
                         </a>
                     </div>
                     <div class="item item-9">
-                        <a href="#Store" class="store-link">
+                        <a href="#" class="store-link">
                             <img src="img/Sport bras.png" alt="Sport Bras">
                             <span class="item-label">SPORT BRAS</span>
                         </a>
                     </div>
                     <div class="item item-10">
-                        <a href="#Store" class="store-link">
+                        <a href="#" class="store-link">
                             <img src="img/Tank tops.png" alt="Tank tops">
                             <span class="item-label">TANK TOPS</span>
                         </a>
                     </div>
                     <div class="item item-11">
-                        <a href="#Store" class="store-link">
+                        <a href="#" class="store-link">
                             <img src="img/Shorts.png" alt="Shorts">
                             <span class="item-label">SHORTS</span>
                         </a>
@@ -382,8 +386,8 @@
             </div>
         </section>
         <!--Collabs section-->
-        <section id="Collabs">
-            <div class="collabs-container">
+        <section id="collabs">
+            <div class="container">
                 <div class="separador">
                     <h4>GET IN TOUCH</h4>
                 </div>
@@ -393,15 +397,15 @@
                 <div class="collabs-content">
                     <!-- Formulario (Left) -->
                     <form class="contact-form">
-                        <input type="text" placeholder="Your full name" required>
-                        <input type="email" placeholder="Your email" required>
+                        <input type="text" name="full_name" placeholder="Your full name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
                         <div class="phone-group">
                             <span class="flag">🇲🇽</span>
-                            <input type="tel" placeholder="+52">
+                            <input type="tel" name="phone" placeholder="+52">
                         </div>
-                        <input type="text" placeholder="United States of Mexico">
-                        <textarea placeholder="Occupation"></textarea>
-                        <textarea placeholder="Your Instagram handle"></textarea>
+                        <input type="text" name="contry" placeholder="United States of Mexico">
+                        <textarea name="occupation" placeholder="Occupation"></textarea>
+                        <textarea name="instagram_account" placeholder="Your Instagram handle"></textarea>
                         <button type="submit">SUBMIT</button>
                     </form>
                     <!--Profile Card (Right)-->
@@ -427,12 +431,12 @@
         <p class="email">support@korinamorfin.com</p>
         <p class="rights"> © 2025 KORINA MORFIN. ALL RIGHTS RESERVED </p>
     </footer>
-    <a href="#Services" class="start">START NOW</a>
+    <a href="#services" class="start">START NOW</a>
 
     <script>
         const toggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('.navegation');
-        const navLinks = document.querySelectorAll('.navegation a');
+        const nav = document.querySelector('.navigation');
+        const navLinks = document.querySelectorAll('.navigation a');
 
         // Abrir / cerrar menú
         toggle.addEventListener('click', () => {
