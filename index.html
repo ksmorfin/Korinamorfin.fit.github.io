@@ -333,6 +333,52 @@
                         </a>
                     </div>
                 </div>
+                <div class="carousel-store">
+                    <span class="desc-carousel">LIMITED EDITION</span>
+                    <div class="carousel-wrapper">
+                        <button class="carousel-btn left">&#10094;</button>
+                        <div class="carousel-track">
+                            <div class="product-card">
+                                <img src="img/Limited-Edition-1.png" alt="Balance V3 Seamless Leggings">
+                                <p class="title">BALANCE V3 SEAMLESS LEGGINGS</p>
+                                <p class="desc">Dark Green</p>
+                                <p class="price">$55 USD</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/Limited-Edition-2.png" alt="Balance V3 Seamless Zip Jacket">
+                                <p class="title">BALANCE V3 SEAMLESS ZIP JACKET</p>
+                                <p class="desc">Dark Green</p>
+                                <p class="price">$55 USD</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/Limited-Edition-3.png" alt="Balance V3 Seamless Strappy Sports Bra">
+                                <p class="title">BALANCE V3 SEAMLESS STRAPPY SPORTS BRA</p>
+                                <p class="desc">Dark Green</p>
+                                <p class="price">$38 USD</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/Limited-Edition-4.png" alt="Balance V3 Seamless Shorts">
+                                <p class="title">BALANCE V3 SEAMLESS SHORTS</p>
+                                <p class="desc">Dark Green</p>
+                                <p class="price">$38 USD</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/Limited-Edition-5.png" alt="Balance V3 Seamless Sports Bra">
+                                <p class="title">BALANCE V3 SEAMLESS SPORTS BRA</p>
+                                <p class="desc">Dark Green</p>
+                                <p class="price">$38 USD</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/Limited-Edition-6.png" alt="Balance V3 Seamless Crop Top">
+                                <p class="title">BALANCE V3 SEAMLESS CROP TOP</p>
+                                <p class="desc">Dark Green</p>
+                                <p class="price">$40 USD</p>
+                            </div>
+                        </div>
+                        <button class="carousel-btn right">&#10095;</button>
+                    </div>
+                </div>
+                <button class="shopnow">SHOP NOW</button>
             </div>
         </section>
         <!--Collabs section-->
@@ -398,6 +444,18 @@
             link.addEventListener('click', () => {
                 nav.classList.remove('active');
             });
+        });
+
+        const track = document.querySelector('.carousel-track');
+        const btnLeft = document.querySelector('.carousel-btn.left');
+        const btnRight = document.querySelector('.carousel-btn.right');
+
+        btnRight.addEventListener('click', () => {
+            track.scrollLeft += 300;
+        });
+
+        btnLeft.addEventListener('click', () => {
+            track.scrollLeft -= 300;
         });
     </script>
 
