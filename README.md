@@ -1,6 +1,6 @@
-# Fitness Website – Responsive Frontend Project
+# Personal Trainer Website – Responsive Frontend Project
 
-Welcome to my repository. This project is a **responsive static website** designed for a fitness brand, focused on clean layout, usability and a modern visual experience.
+Welcome to my repository 🙂‍↕️. This project is a responsive static website designed for a fitness personal trainer brand, focused on clean layout and usability.
 
 The site was built entirely using HTML, CSS and a small amount of JavaScript, following good structural and responsive design practices.
 
@@ -33,7 +33,7 @@ This website represents a fitness brand and includes:
 - Product cards simulating an online store
 - Footer and social media links
 
-All sections are connected through internal containers for smooth navigation.
+All sections are connected through internal anchors for smooth navigation.
 
 ---
 
@@ -43,7 +43,7 @@ All sections are connected through internal containers for smooth navigation.
   - Semantic tags (`header`, `nav`, `section`, `footer`)
   - Proper structure and accessibility considerations
 
-- **CSS**
+- **CSS3**
   - Flexbox and CSS Grid for layouts
   - Responsive design using media queries
   - Hover effects and smooth transitions
@@ -67,10 +67,10 @@ All sections are connected through internal containers for smooth navigation.
 
 The project is deployed using GitHub Pages:
 
-👉 **Live Website:**  
+➡️ **Live Website:**  
 https://ksmorfin.github.io/Korinamorfin.fit.github.io/
 
-👉 **GitHub Repository:**  
+➡️ **GitHub Repository:**  
 https://github.com/ksmorfin/Korinamorfin.fit.github.io
 
 ---
@@ -90,6 +90,6 @@ Through this project I practiced and learned:
 
 ## 👩‍💻 Author
 
-**Myriam Korina Korina Santos Morfin**
+**Myriam Korina Santos Morfin**
 
 Frontend project created as part of my learning process in Web Development.
