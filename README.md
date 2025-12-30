@@ -1,6 +1,6 @@
 # Personal Trainer Website – Responsive Frontend Project
 
-Welcome to my repository 🙂‍↕️. This project is a responsive static website designed for a fitness personal trainer brand, focused on clean layout and usability.
+Welcome to my repository ❣️. This project is a responsive static website designed for a fitness personal trainer brand, focused on clean layout and usability.
 
 The site was built entirely using HTML, CSS and a small amount of JavaScript, following good structural and responsive design practices.
 
