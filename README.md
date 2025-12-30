@@ -37,7 +37,7 @@ All sections are connected through internal containers for smooth navigation.
 
 ---
 
-## 🔧 Technologies and Techniques Used
+## 👷🏻 Technologies and Techniques Used
 
 - **HTML5**
   - Semantic tags (`header`, `nav`, `section`, `footer`)
@@ -75,7 +75,7 @@ https://github.com/ksmorfin/Korinamorfin.fit.github.io
 
 ---
 
-## 📝 What I Learned
+## 💡 What I Learned
 
 Through this project I practiced and learned:
 
