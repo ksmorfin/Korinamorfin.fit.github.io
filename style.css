@@ -749,6 +749,7 @@ body {
     gap: 100px;
     justify-content: center;
     margin: 60px 0;
+    align-items: flex-start;
 }
 
 #collabs .contact-form {
@@ -762,7 +763,6 @@ body {
 #collabs .contact-form input,
 #collabs .contact-form textarea {
     padding: 12px 16px;
-    /* ↓ antes estaba muy alto */
     font-size: 14px;
     border: 2px solid #dcdcdc;
     border-radius: 6px;
@@ -775,7 +775,45 @@ body {
     resize: none;
 }
 
-#collabs .contact-form button {
+#collabs .phone-group {
+    display: flex;
+    align-items: center;
+    border: 2px solid #dcdcdc;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+#collabs .phone-group select {
+    border: none;
+    padding: 0 16px;
+    height: 45px;
+    font-size: 13px;
+    font-family: "Urbanist", sans-serif;
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+#collabs .phone-group input {
+    background: white;
+    flex: 1;
+    padding: 0px 16px;
+    height: 45px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+}
+
+#collabs .phone-group select:focus,
+#collabs .phone-group input:focus {
+    outline: none;
+}
+
+#collabs .phone-group:focus-within {
+    border: 2px solid #9db4ff;   /* color que prefieras */
+}
+
+#collabs .contact-form button[type="submit"] {
     width: fit-content;
     margin: 0 auto;
     margin-top: 20px;
@@ -790,34 +828,54 @@ body {
     transition: border-color 0.2s ease;
 }
 
-#collabs .contact-form button:hover {
+#collabs .contact-form button[type="submit"]:hover {
     border-color: black;
 }
 
-#collabs .phone-group {
+.comments-container {
+    margin-top: 30px;
     display: flex;
-    align-items: center;
-    border: 2px solid #dcdcdc;
-    border-radius: 6px;
-    overflow: hidden;
-    /* ← CLAVE */
-    background-color: #f2f2f2;
+    flex-direction: column;
+    gap: 15px;
 }
 
-#collabs .phone-group .flag {
-    padding: 0 14px;
-    background-color: none;
-    font-size: 18px;
-}
-
-#collabs .phone-group input {
-    /* ← elimina borde interno */
-    background: white;
-    flex: 1;
-    padding: 12px 16px;
+.comment {
+    width: 100%;
     font-size: 14px;
-    outline: none;
-    border: none;
+    line-height: 1.5;
+    border: 1px solid #dcdcdc;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: "Urbanist", sans-serif;
+    background-color: #fafafa;
+}
+
+.comment small {
+    display: block;
+    margin-top: 8px;
+    font-size: 11px;
+    color: gray;
+    text-align: center;
+}
+
+.delete-btn {
+    margin-top: 15px;
+    padding: 8px 18px;
+    font-size: 11px;
+    letter-spacing: .4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: #e6e6e6;
 }
 
 /*Profile Card*/
@@ -869,6 +927,7 @@ body {
     padding: 12px;
     border-radius: 10px;
     font-size: 12px;
+    letter-spacing: .7px;
     margin-bottom: 12px;
     cursor: pointer;
     transition: background 0.2s ease;

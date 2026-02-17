@@ -54,44 +54,47 @@
 
 <body>
     <main>
-    <!--Introduction section-->
-    <section id="hello">
-        <img class="banner" src="img/Banner.jpeg" alt="Korina Morfin Banner">
-        <div class="container">
-            <div class="introduction">
-                <h1>KORINA MORFIN</h1>
-                <h2>CERTIFIED PERSONAL TRAINER</h2>
-                <article>
-                    <p>I am Korina Morfin, an internationally certified NASM Personal Trainer committed to helping
-                        clients
-                        build strength, confidence, and real, sustainable results at any fitness level. My approach is
-                        rooted in smart, science-based training that respects your technique, your process, and your
-                        lifestyle.
-                    </p>
-                    <p>I design biomechanics-driven, personalized programs that teach you how to train intelligently,
-                        progress
-                        safely, and truly understand how your body moves—because every plan I create has a purpose and a
-                        strategy tailored specifically for you.
-                    </p>
-                    <p class="bold">My mission is to guide you step by step as you discover your physical and mental
-                        strength,
-                        develop lasting habits, and learn to enjoy the journey. Training with me means having a
-                        coach who
-                        challenges you, supports you, and helps you become a more confident, disciplined, and
-                        stronger version
-                        of yourself.
-                    </p>
-                </article>
-                <a class="startnow" href="#Services">START NOW</a>
-            </div>
-        </div>
-        <!--Slogan-->
-        <div id="slogan">
+        <!--Introduction section-->
+        <section id="hello">
+            <img class="banner" src="img/Banner.jpeg" alt="Korina Morfin Banner">
             <div class="container">
-                <h3>TRAIN SMART, GROW STRONG</h3>
+                <div class="introduction">
+                    <h1>KORINA MORFIN</h1>
+                    <h2>CERTIFIED PERSONAL TRAINER</h2>
+                    <article>
+                        <p>I am Korina Morfin, an internationally certified NASM Personal Trainer committed to helping
+                            clients
+                            build strength, confidence, and real, sustainable results at any fitness level. My approach
+                            is
+                            rooted in smart, science-based training that respects your technique, your process, and your
+                            lifestyle.
+                        </p>
+                        <p>I design biomechanics-driven, personalized programs that teach you how to train
+                            intelligently,
+                            progress
+                            safely, and truly understand how your body moves—because every plan I create has a purpose
+                            and a
+                            strategy tailored specifically for you.
+                        </p>
+                        <p class="bold">My mission is to guide you step by step as you discover your physical and mental
+                            strength,
+                            develop lasting habits, and learn to enjoy the journey. Training with me means having a
+                            coach who
+                            challenges you, supports you, and helps you become a more confident, disciplined, and
+                            stronger version
+                            of yourself.
+                        </p>
+                    </article>
+                    <a class="startnow" href="#services">START NOW</a>
+                </div>
             </div>
-        </div>
-    </section>
+            <!--Slogan-->
+            <div id="slogan">
+                <div class="container">
+                    <h3>TRAIN SMART, GROW STRONG</h3>
+                </div>
+            </div>
+        </section>
         <!--Services section-->
         <section id="services">
             <div class="container">
@@ -396,17 +399,26 @@
                 </p>
                 <div class="collabs-content">
                     <!-- Formulario (Left) -->
-                    <form class="contact-form">
+                    <form class="contact-form" id="comment-form">
                         <input type="text" name="full_name" placeholder="Your full name" required>
                         <input type="email" name="email" placeholder="Your email" required>
                         <div class="phone-group">
-                            <span class="flag">🇲🇽</span>
-                            <input type="tel" name="phone" placeholder="+52">
+                            <select id="country-code" name="country_code">
+                                <option value="+52" data-flag="🇲🇽">🇲🇽 +52</option>
+                                <option value="+1" data-flag="🇨🇦">🇨🇦 +1</option>
+                                <option value="+1" data-flag="🇺🇸">🇺🇸 +1</option>
+                                <option value="+54" data-flag="🇦🇷">🇦🇷 +54</option>
+                                <option value="+57" data-flag="🇨🇴">🇨🇴 +57</option>
+                                <option value="+34" data-flag="🇪🇸">🇪🇸 +34</option>
+                            </select>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
                         </div>
-                        <input type="text" name="contry" placeholder="United States of Mexico">
+                        <input type="text" name="country" placeholder="Country">
                         <textarea name="occupation" placeholder="Occupation"></textarea>
-                        <textarea name="instagram_account" placeholder="Your Instagram handle"></textarea>
+                        <textarea name="instagramaccount" placeholder="Your Instagram handle"></textarea>
                         <button type="submit">SUBMIT</button>
+                        <div id="commentscontainer" class="comments-container">
+                        </div>
                     </form>
                     <!--Profile Card (Right)-->
                     <div class="profile-card">
@@ -433,35 +445,7 @@
     </footer>
     <a href="#services" class="start">START NOW</a>
 
-    <script>
-        const toggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('.navigation');
-        const navLinks = document.querySelectorAll('.navigation a');
-
-        // Abrir / cerrar menú
-        toggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
-
-        // Cerrar menú
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('active');
-            });
-        });
-
-        const track = document.querySelector('.carousel-track');
-        const btnLeft = document.querySelector('.carousel-btn.left');
-        const btnRight = document.querySelector('.carousel-btn.right');
-
-        btnRight.addEventListener('click', () => {
-            track.scrollLeft += 300;
-        });
-
-        btnLeft.addEventListener('click', () => {
-            track.scrollLeft -= 300;
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
