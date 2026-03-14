@@ -36,18 +36,41 @@ const commentsContainer = document.querySelector("#commentscontainer");
 const countryCode = document.getElementById("country-code");
 const phoneInput = document.getElementById("phone");
 
+let comments = [];
+
+function renderComments() {
+    commentsContainer.innerHTML = "";
+    comments.forEach(comment => {
+        const commentElement = document.createElement("div");
+        commentElement.classList.add("comment");
+
+        commentElement.innerHTML = `
+            <p><strong>${comment.name}</strong></p>
+            <p>${comment.email}</p>
+            <p>${comment.phone}</p>
+            <p>${comment.country}</p>
+            <p>${comment.occupation}</p>
+            <p>${comment.instagramaccount}</p>
+            <small>${comment.date}</small>
+            <button type="button" class="delete-btn">Delete</button>
+        `;
+
+        commentsContainer.appendChild(commentElement);
+    });
+}
+
 countryCode.addEventListener("change", function () {
     phoneInput.placeholder = this.value + " ";
 });
-
-form.addEventListener("submit", function (e) {
-    e.preventDefault();
 
 commentsContainer.addEventListener("click", function (e) {
     if (e.target.classList.contains("delete-btn")) {
         e.target.closest(".comment").remove();
     }
 });
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
     const name = form.full_name.value;
     const email = form.email.value;
@@ -60,23 +83,32 @@ commentsContainer.addEventListener("click", function (e) {
 
     if (!occupation.trim()) return;
 
-    const comment = document.createElement("div");
-    comment.classList.add("comment");
-
     const date = new Date();
     const formattedDate = date.toLocaleString();
 
-    comment.innerHTML = `
-        <p><strong>${name}</strong></p>
-        <p>${email}</p>
-        <p>${fullPhone}</p>
-        <p>${country}</p>
-        <p>${occupation}</p>
-        <p>${instagramaccount}</p>
-        <small>${formattedDate}</small>
-        <button type="button" class="delete-btn">Delete</button>
-    `;
+    const newComment = {
+        name: name,
+        email: email,
+        phone: fullPhone,
+        country: country,
+        occupation: occupation,
+        instagramaccount: instagramaccount,
+        date: formattedDate
+    };
 
-    commentsContainer.appendChild(comment);
-    form.reset();
+comments.push(newComment);
+
+localStorage.setItem("comments", JSON.stringify(comments));
+
+renderComments();
+
+form.reset();
+
 });
+
+const savedComments = localStorage.getItem("comments");
+
+if (savedComments) {
+    comments = JSON.parse(savedComments);
+    renderComments();
+}
