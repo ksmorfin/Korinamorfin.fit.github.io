@@ -40,7 +40,7 @@ let comments = [];
 
 function renderComments() {
     commentsContainer.innerHTML = "";
-    comments.forEach(comment => {
+    comments.forEach((comment, index) => {
         const commentElement = document.createElement("div");
         commentElement.classList.add("comment");
 
@@ -52,7 +52,7 @@ function renderComments() {
             <p>${comment.occupation}</p>
             <p>${comment.instagramaccount}</p>
             <small>${comment.date}</small>
-            <button type="button" class="delete-btn">Delete</button>
+            <button type="button" class="delete-btn" data-index="${index}">Delete</button>
         `;
 
         commentsContainer.appendChild(commentElement);
@@ -65,7 +65,14 @@ countryCode.addEventListener("change", function () {
 
 commentsContainer.addEventListener("click", function (e) {
     if (e.target.classList.contains("delete-btn")) {
-        e.target.closest(".comment").remove();
+        
+        const index = e.target.dataset.index;
+
+        comments.splice(index, 1);
+        
+        localStorage.setItem("comments", JSON.stringify(comments));
+
+        renderComments();
     }
 });
 
